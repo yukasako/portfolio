@@ -42,7 +42,7 @@ a:visited{
 .content{
     width: 100vw;
     position: relative;
-    top: 15vh;
+    top: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,7 +107,6 @@ h1{
 
 .thumbnail{
     position: relative;
-    top: 5vh;
     width: 25vw;
     height: 25vh;
     object-fit: cover;
@@ -117,7 +116,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: space-around;
+    align-items: flex-start;
 }
 
 /* CONTACT page */
