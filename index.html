@@ -1,30 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yukako Sakozono</title>
-    <link rel="stylesheet" href="style2.css">
-</head>
-<body>
-
-    <div class="wrapper">
-        <div class="header">
-            <a href="index.html" class="nav">TOP</a>
-            <a href="illustration.html" class="nav">ILLUSTRATION</a>
-            <a href="biography.html" class="nav">BIOGRAPHY</a>
-            <a href="https://www.instagram.com/yukainsweden/" class="nav">COMIC BLOG</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1"></script>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header></header>
+    <article id="contents">
+      <article id="introduction">
+        <h2>Hi I'm Yuka</h2>
+        <img id="portrait" src="./img/illust10-2.jpeg" alt="portrait" />
+        <h3>As a Developer, as a Creater</h3>
+        <div class="text">
+          <p>
+            A Frontend development student at Nackademin. Love creating, well
+            organised and tenacious.
+          </p>
+          <p>
+            Previous experience in web marketing, international logistics,
+            customer service and store management. Originally from Tokyo and
+            moved to Stockholm in 2016. After completing all the Swedish
+            courses, I worked in E-commerce marketing for the Japanese market.
+          </p>
+          <p>
+            Alongside studying Swedish from 2017 to 2020, I made comics about my
+            life in Sweden on Instagram, targeting the Japanese audience. This
+            project @yukainsweden reached around 20,000 followers at its peak.
+          </p>
+          <p>
+            Frontend development and comic creation are very similar to me. Both
+            involve visualising ideas by considering the perspectives of users
+            or readers. Both require concentration and patience, and it brings
+            great joy of creating. Skaparglädje is my key word, and I aspire to
+            make such work my livelihood.
+          </p>
         </div>
-        <!--
-        <div class="content">
-            <img src="img/illust13.jpeg" class="top-image">
-        </div>-->
-
-        <div class="footer">
-            <h1>Yukako Sakozono Portfolio</h1>
+      </article>
+      <article id="skills">
+        <h3>Abilities</h3>
+        <div class="charts">
+          <div class="chart"><canvas id="HTML"></canvas></div>
+          <div class="chart"><canvas id="JavaScript"></canvas></div>
+          <div class="chart"><canvas id="Git"></canvas></div>
         </div>
-    </div>
-
-    </div>
-</body>
+        <div class="charts">
+          <div class="chart"><canvas id="Drawing"></canvas></div>
+          <div class="chart"><canvas id="ClipStudio"></canvas></div>
+          <div class="chart"><canvas id="Figma"></canvas></div>
+        </div>
+        <div class="charts">
+          <div class="chart"><canvas id="Japanese"></canvas></div>
+          <div class="chart"><canvas id="English"></canvas></div>
+          <div class="chart"><canvas id="Swedish"></canvas></div>
+        </div>
+      </article>
+      <article id="history">
+        <h3>History</h3>
+        <div class="timeline">
+          <ul class="timeline-list">
+            <li class="timeline-list-item">
+              <div class="date">2023-</div>
+              <div class="contentStudent">
+                <p class="title">Front-end Development Student</p>
+                <div class="companyAndLocation">
+                  <p class="company">Nackademin</p>
+                  <p class="location">Stockholm, Sweden</p>
+                </div>
+                <p class="jobDescription">
+                  JavaScript, HTML, CSS(SASS), Git, Accessibility, Figma, Agile,
+                  CMS.
+                </p>
+              </div>
+            </li>
+            <li class="timeline-list-item">
+              <div class="date">2019-2022</div>
+              <div class="content">
+                <p class="title">Marketing Associate / Japanese Market</p>
+                <div class="companyAndLocation">
+                  <p class="company">Triwa</p>
+                  <p class="location">Stockholm, Sweden</p>
+                </div>
+                <p class="jobDescription">
+                  Marketing for the Japanese market. <br />
+                  Influencer marketing, social media communication, copy writing
+                  for digital ads and newsletter communication for subscribers.
+                  Content localization, product translation and updating
+                  e-commerce website. Inventory control and customer service in
+                  Japanese.
+                </p>
+              </div>
+            </li>
+            <li class="timeline-list-item">
+              <div class="date">2018 - 2019-</div>
+              <div class="contentStudent">
+                <p class="title">Student</p>
+                <div class="companyAndLocation">
+                  <p class="company">Stockholm University</p>
+                  <p class="location">Stockholm, Sweden</p>
+                </div>
+                <p class="jobDescription">Svenska som främmande språk</p>
+              </div>
+            </li>
+            <li class="timeline-list-item">
+              <div class="date">2017-</div>
+              <div class="content">
+                <p class="title">Banquet Server</p>
+                <div class="companyAndLocation">
+                  <p class="company">Stadshusrestauranger</p>
+                  <p class="location">Stockholm, Sweden</p>
+                </div>
+                <p class="jobDescription">
+                  Serving the Nobel banquet 2018, 2019 and 2022.
+                </p>
+              </div>
+            </li>
+            <li class="timeline-list-item">
+              <div class="date">2016</div>
+              <div class="lifeEvent">
+                <p class="title">Move to Stockholm</p>
+              </div>
+            </li>
+            <li class="timeline-list-item">
+              <div class="date">2015- 2016</div>
+              <div class="content">
+                <p class="title">Export Officer</p>
+                <div class="companyAndLocation">
+                  <p class="company">Kintetsu World Express</p>
+                  <p class="location">Stockholm, Sweden</p>
+                </div>
+                <p class="jobDescription">
+                  Receiving shipping orders from clients and arrange the
+                  shipments.
+                </p>
+              </div>
+            </li>
+            <li class="timeline-list-item">
+              <div class="date">2013- 2015</div>
+              <div class="content">
+                <p class="title">Assistant Store Manager</p>
+                <div class="companyAndLocation">
+                  <p class="company">UNIQLO</p>
+                  <p class="location">Tokyo, Japan</p>
+                </div>
+                <p class="jobDescription">
+                  Managing UNIQLO apparel stores in Tokyo after the 6 month UMC
+                  (Uniqlo Management Candidate) program.
+                </p>
+              </div>
+            </li>
+            <li class="timeline-list-item">
+              <div class="date">2008- 2013</div>
+              <div class="contentStudent">
+                <p class="title">Student</p>
+                <div class="companyAndLocation">
+                  <p class="company">Rikkyo University</p>
+                  <p class="location">Tokyo, Japan</p>
+                </div>
+                <p class="jobDescription">
+                  Bachelor of Arts - BA, Contemporary Psychology
+                </p>
+              </div>
+            </li>
+            <li class="timeline-list-item">
+              <div class="date">1989</div>
+              <div class="lifeEvent">
+                <p class="title">Born in Tokyo</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article id="projects">
+        <h3>Projects</h3>
+        <article id="webDevelopment">
+          <p>As a Developer</p>
+          <article id="Ankademin">
+            <div class="projectTitle">
+              <p>Ankademin Quiz Farm</p>
+              <div>
+                <img class="icon" src="" alt="" />
+                <img class="icon" src="" alt="" />
+              </div>
+            </div>
+            <div class="projectDescriotion">
+              <p>
+                A school project. Made by JavaScript, HTML/CSS, and all the
+                images are drawn by myself using ClipStudio. Answer the Quiz and
+                find baby ducks!
+              </p>
+            </div>
+            <video
+              class="video"
+              src="./video/AnkademinDemo-1.mp4"
+              autoplay
+              muted
+              loop
+            ></video>
+          </article>
+          <article id="TaskOptima">
+            <p>TaskOptima</p>
+          </article>
+        </article>
+        <article id="drawing">
+          <p>As a Creator</p>
+          <article id="Yukainsweden">
+            <p>Yuka in Sweden</p>
+          </article>
+          <article id="YasuragiKids">
+            <p>Yasuragi Kids</p>
+          </article>
+          <article id="illustrations">
+            <p>illustrations</p>
+          </article>
+        </article>
+      </article>
+    </article>
+  </body>
 </html>

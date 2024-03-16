@@ -1,0 +1,205 @@
+/* digital clock font */
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap");
+/* Jost */
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+/* Quicksand */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+/* Outfit */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+/* Assistant */
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap");
+
+:root {
+  --color-1: #FFFEFC;
+  --color-2: #B2E4EC;
+  --color-3: #FCDDDF;
+  --color-4: #FEF3D6;
+  --color-5: #00A5BF;
+  --color-6: #F69096;
+  --color-7: #FDD876;
+  --color-8: #324356;
+  --color-9: #aaaaaa;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Assistant;
+}
+
+#contents {
+  width: 85vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  margin: 48px;
+}
+
+#introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  #portrait {
+    width: 50vw;
+    border-radius: 50%;
+  }
+
+  .text p {
+    margin: 16px;
+  }
+}
+
+#skills {
+  width: 100%;
+  text-align: center;
+
+  .charts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .chart {
+    width: 25vw;
+    margin: 10px;
+  }
+}
+
+#history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .timeline {
+    max-width: 940px;
+    margin: auto;
+
+    &-list {
+      padding: 40px 0;
+
+      &-item {
+        display: flex;
+        line-height: 1.5;
+
+        .date {
+          width: 20%;
+          padding: 0 0 0 20px;
+        }
+
+        .content {
+          position: relative;
+          width: 80%;
+          padding: 0 20px 30px 30px;
+          border-left: 1px solid var(--color-9);
+
+          .title {
+            font-weight: bold;
+            font-size: 16px;
+          }
+
+          .company {}
+
+          .location {
+            color: var(--color-8);
+            font-size: 14px;
+          }
+
+          .jobDescription {
+            margin-top: 12px;
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 6px;
+            left: -5px; //widthの半分の値を指定
+            width: 10px;
+            height: 10px;
+            background-color: var(--color-6);
+            border-radius: 10px;
+          }
+        }
+
+        .contentStudent {
+          position: relative;
+          width: 80%;
+          padding: 0 20px 30px 30px;
+          border-left: 1px solid var(--color-9);
+
+          .title {
+            font-weight: bold;
+            font-size: 16px;
+          }
+
+          .company {}
+
+          .location {
+            color: var(--color-8);
+            font-size: 14px;
+          }
+
+          .jobDescription {
+            margin-top: 12px;
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 6px;
+            left: -5px; //widthの半分の値を指定
+            width: 10px;
+            height: 10px;
+            background-color: var(--color-5);
+            border-radius: 10px;
+          }
+        }
+
+        .lifeEvent {
+          position: relative;
+          width: 80%;
+          padding: 0 20px 30px 30px;
+          border-left: 1px solid var(--color-9);
+
+          .title {
+            font-weight: bold;
+            font-size: 16px;
+          }
+
+          .location {
+            color: var(--color-8);
+            font-size: 14px;
+          }
+
+          .jobDescription {
+            margin-top: 12px;
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 6px;
+            left: -5px; //widthの半分の値を指定
+            width: 10px;
+            height: 10px;
+            background-color: var(--color-7);
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.video{
+  width: 100%;
+}
