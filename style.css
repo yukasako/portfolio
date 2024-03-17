@@ -3,8 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap");
 /* Jost */
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
-/* Quicksand */
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 /* Outfit */
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 /* Assistant */
@@ -36,7 +34,7 @@
   padding: 0;
   color: var(--color-11);
   text-decoration: none;
-  font-family: Jost;
+  font-family: Outfit;
 }
 
 html {
@@ -102,6 +100,7 @@ header #navbar {
   flex: row;
   justify-content: space-between;
   padding: var(--space-48);
+  padding-bottom: 0px;
   font-size: 16px;
 }
 header #navbar h1 {
@@ -167,6 +166,9 @@ header #navbar-links a:hover {
 #skills {
   width: 100%;
   text-align: center;
+}
+#skills h3 {
+  margin: var(--space-48);
 }
 #skills .allChats {
   width: 100%;
@@ -319,6 +321,9 @@ header #navbar-links a:hover {
   flex-direction: column;
   align-items: center;
   gap: var(--space-48);
+}
+#projects h3 {
+  margin-bottom: 0px;
 }
 #projects .project {
   display: flex;
