@@ -5,21 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/159b2b3760.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="main.js" defer></script>
   </head>
-  <body>
-    <header></header>
+  <body class="scroll-a">
+    <header>
+      <nav>
+        <div id="navbar" class="">
+          <h1>
+            Yukako Sakozono <br />
+            Isacson
+          </h1>
+          <i id="hamburger" class="fa-solid fa-bars"></i>
+        </div>
+        <div id="navbar-links" class="displayNone">
+          <a href="#introduction">About</a>
+          <a href="#skills">Abilities</a>
+          <a href="#history">History</a>
+          <a href="#projects">Projects</a>
+          <a href="./img/material/CV.pdf">CV</a>
+        </div>
+      </nav>
+    </header>
     <article id="contents">
       <article id="introduction">
-        <h2>Hi I'm Yuka</h2>
-        <img id="portrait" src="./img/illust10-2.jpeg" alt="portrait" />
-        <h3>As a Developer, as a Creater</h3>
+        <img id="portrait" src="./img/material/portrait.png" alt="portrait" />
         <div class="text">
-          <p>
-            A Frontend development student at Nackademin. Love creating, well
-            organised and tenacious.
-          </p>
+          <h2>Hi I'm Yuka</h2>
+          <h2>A Frontend development student</h2>
           <p>
             Previous experience in web marketing, international logistics,
             customer service and store management. Originally from Tokyo and
@@ -41,25 +59,27 @@
         </div>
       </article>
       <article id="skills">
-        <h3>Abilities</h3>
-        <div class="charts">
-          <div class="chart"><canvas id="HTML"></canvas></div>
-          <div class="chart"><canvas id="JavaScript"></canvas></div>
-          <div class="chart"><canvas id="Git"></canvas></div>
-        </div>
-        <div class="charts">
-          <div class="chart"><canvas id="Drawing"></canvas></div>
-          <div class="chart"><canvas id="ClipStudio"></canvas></div>
-          <div class="chart"><canvas id="Figma"></canvas></div>
-        </div>
-        <div class="charts">
-          <div class="chart"><canvas id="Japanese"></canvas></div>
-          <div class="chart"><canvas id="English"></canvas></div>
-          <div class="chart"><canvas id="Swedish"></canvas></div>
+        <h3 class="contentName">Abilities</h3>
+        <div class="allChats fade">
+          <div class="charts">
+            <div class="chart"><canvas id="HTML"></canvas></div>
+            <div class="chart"><canvas id="JavaScript"></canvas></div>
+            <div class="chart"><canvas id="Git"></canvas></div>
+          </div>
+          <div class="charts">
+            <div class="chart"><canvas id="Drawing"></canvas></div>
+            <div class="chart"><canvas id="ClipStudio"></canvas></div>
+            <div class="chart"><canvas id="Figma"></canvas></div>
+          </div>
+          <div class="charts">
+            <div class="chart"><canvas id="Japanese"></canvas></div>
+            <div class="chart"><canvas id="English"></canvas></div>
+            <div class="chart"><canvas id="Swedish"></canvas></div>
+          </div>
         </div>
       </article>
-      <article id="history">
-        <h3>History</h3>
+      <article id="history" class="fade">
+        <h3 class="contentName">History</h3>
         <div class="timeline">
           <ul class="timeline-list">
             <li class="timeline-list-item">
@@ -172,19 +192,28 @@
               </div>
             </li>
           </ul>
+          <div class="more">
+            <button>Load more</button>
+          </div>
         </div>
       </article>
       <article id="projects">
-        <h3>Projects</h3>
-        <article id="webDevelopment">
-          <p>As a Developer</p>
-          <article id="Ankademin">
+        <h3 class="contentName fade">Projects</h3>
+        <article id="Ankademin" class="project fade">
+          <div class="projectDetail">
             <div class="projectTitle">
               <p>Ankademin Quiz Farm</p>
-              <div>
-                <img class="icon" src="" alt="" />
-                <img class="icon" src="" alt="" />
+              <div class="icons">
+                <i class="fa-brands fa-github"></i>
+                <a href="https://yukasako.github.io/AnkademinQuiz/">
+                  <i class="fa-solid fa-up-right-from-square"></i
+                ></a>
               </div>
+            </div>
+            <div class="projectType">
+              <p><b>Project Type:</b> Web Development, School Project</p>
+              <p><b>Collaborator:</b> None</p>
+              <p><b>Period:</b> Dec 2023</p>
             </div>
             <div class="projectDescriotion">
               <p>
@@ -193,31 +222,135 @@
                 find baby ducks!
               </p>
             </div>
-            <video
-              class="video"
-              src="./video/AnkademinDemo-1.mp4"
-              autoplay
-              muted
-              loop
-            ></video>
-          </article>
-          <article id="TaskOptima">
-            <p>TaskOptima</p>
-          </article>
+          </div>
+          <video
+            class="video"
+            src="./video/AnkademinDemo-1.mp4"
+            autoplay
+            muted
+            loop
+          ></video>
         </article>
-        <article id="drawing">
-          <p>As a Creator</p>
-          <article id="Yukainsweden">
-            <p>Yuka in Sweden</p>
-          </article>
-          <article id="YasuragiKids">
-            <p>Yasuragi Kids</p>
-          </article>
-          <article id="illustrations">
-            <p>illustrations</p>
-          </article>
+        <article id="TaskOptima" class="project fade">
+          <div class="projectDetail">
+            <div class="projectTitle">
+              <p>TaskOptima</p>
+              <div class="icons">
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-solid fa-up-right-from-square"></i>
+              </div>
+            </div>
+            <div class="projectType">
+              <p><b>Project Type:</b> Web Development, School Project</p>
+              <p>
+                <b>Collaborator:</b>
+                Frederika, Jonas
+              </p>
+              <p><b>Period:</b> March 2024</p>
+            </div>
+            <div class="projectDescriotion">
+              <p>
+                A school project. Made by JavaScript, HTML/CSS with my classmate
+                Frederika and Jonas.
+              </p>
+            </div>
+          </div>
+          <video
+            class="video"
+            src="./video/TaskOptima-1.mp4"
+            autoplay
+            muted
+            loop
+          ></video>
         </article>
+        <article id="Yukainsweden" class="project fade">
+          <div class="projectDetail">
+            <div class="projectTitle">
+              <p>Yuka in Sweden</p>
+              <div class="icons">
+                <i class="fa-solid fa-up-right-from-square"></i>
+              </div>
+            </div>
+            <div class="projectType">
+              <p><b>Project Type:</b> Comics / Articles</p>
+              <p>
+                <b>Collaborator:</b>
+                <a href="https://shop.san-ei-corp.co.jp/">SAN-EI</a>,
+                <a href="https://manmaru-e.net/">Manmau-e.net</a>,
+                <a href="https://lobor.jp/">Lobor</a>
+              </p>
+              <p><b>Period:</b> 2017 - 2020</p>
+            </div>
+            <div class="projectDescriotion">
+              <p>
+                Instagram comic blog about my life in Sweden, targeting the
+                Japanese audience. This project reached around 20,000 followers
+                at its peak.
+              </p>
+              <p>
+                As an extension of this project, I serialized articles in the
+                web magazine Pelulu (Sanei Shobo) from March to December 2018,
+                as well as created advertising comics for Manmaru E-net and
+                Lobor.
+              </p>
+            </div>
+          </div>
+          <img src="./img/yukainsweden/yukainsweden.webp" alt="" />
+        </article>
+        <article id="YasuragiKids" class="project fade">
+          <div class="projectDetail">
+            <div class="projectTitle">
+              <p>Yasuragi Kids</p>
+            </div>
+            <div class="projectType">
+              <p><b>Project Type:</b> Comics / Event</p>
+              <p>
+                <b>Collaborator:</b>
+                <a href="https://www.yasuragi.se/">Yasuragi</a>
+              </p>
+              <p><b>Period:</b> Jul - Aug 2018</p>
+            </div>
+            <div class="projectDescriotion">
+              <p>
+                The children's event "Rita Manga dagbok med Yuka" at Yasuragi, a
+                Japanese-style spa in Nacka. I taught children how to draw manga
+                (comic essays) and helped them to create manga diaries as summer
+                memories.
+              </p>
+            </div>
+          </div>
+          <div class="slide">
+            <button onclick="back()">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <div id="yasuragiImages">
+              <img src="./img/yukainsweden/yasuragi-1.webp" />
+              <img src="./img/yukainsweden/yasuragi-2.webp" />
+              <img src="./img/yukainsweden/yasuragi-3.webp" />
+              <img src="./img/yukainsweden/yasuragi-4.webp" />
+              <img src="./img/yukainsweden/yasuragi-5.webp" />
+              <img src="./img/yukainsweden/yasuragi-8.webp" />
+              <img src="./img/yukainsweden/yasuragi-6.jpeg" />
+              <!-- <img src="./img/yukainsweden/yasuragi-7.jpeg" /> -->
+            </div>
+            <button onclick="next()">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </article>
+        <article id="illustrations"></article>
       </article>
     </article>
+    <footer class="footer">
+      <div id="contacts">
+        <a href="https://github.com/yukasako" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/yukako-sakozono/" target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+      <p>©2024 Yukako Sakozono Isacson</p>
+    </footer>
   </body>
 </html>
