@@ -12,6 +12,18 @@ for (let i = targets.length; i--; ) {
   observer.observe(targets[i]);
 }
 
+//Nav-burger
+const ham = document.getElementById("hamburger");
+const navLink = document.getElementById("navbar-links");
+
+ham.addEventListener("click", () => {
+  navLink.classList.toggle("displayNone");
+});
+navLink.addEventListener("click", () => {
+  navLink.classList.toggle("displayNone");
+});
+
+//Charts
 let chart = (skill, percentage) => {
   let canvas = document.querySelector(`#${skill}`);
   canvas.id = "myChart";
@@ -60,16 +72,6 @@ let chart = (skill, percentage) => {
     plugins: [chartText],
   });
 };
-
-const ham = document.getElementById("hamburger");
-const navLink = document.getElementById("navbar-links");
-
-ham.addEventListener("click", () => {
-  navLink.classList.toggle("displayNone");
-});
-navLink.addEventListener("click", () => {
-  navLink.classList.toggle("displayNone");
-});
 
 let techChart = (skill, percentage) => {
   let canvas = document.querySelector(`#${skill}`);
@@ -218,9 +220,41 @@ let languageChart = (skill, percentage) => {
   });
 };
 
+// // アニメ発火させようとした https://mixltd.jp/blog/chart-js-animation/
+// var skillCharts = document.getElementById("HTML"); //canvasに設定したidを指定
+// var chart_flag = false; //フラグを設定
+
+// //グラフの描画タイミング
+// var chartTiming = function () {
+//   var target = $(skillCharts).offset().top; //画面上からのコンテンツまでの距離
+//   console.log(target);
+//   var scroll = $(window).scrollTop(); //スクロール量を取得
+//   console.log(scroll);
+//   var height = $(window).height(); //画面の高さを取得
+//   console.log(height);
+
+//   if (scroll > target - height - 200 && chart_flag == false) {
+//     chart(`HTML`, 85);
+//     techChart(`JavaScript`, 60);
+//     techChart(`Git`, 50);
+
+//     artChart("Drawing", 90);
+//     artChart("ClipStudio", 85);
+//     artChart("Figma", 70);
+
+//     languageChart("Japanese", 100);
+//     languageChart("English", 75);
+//     languageChart("Swedish", 60);
+
+//     chart_flag = true;
+//   }
+// };
+// window.addEventListener("load", chartTiming);
+// window.addEventListener("scroll", chartTiming);
+
 chart(`HTML`, 85);
-techChart(`JavaScript`, 60);
-techChart(`Git`, 50);
+techChart(`JavaScript`, 50);
+techChart(`Git`, 40);
 
 artChart("Drawing", 90);
 artChart("ClipStudio", 85);
@@ -230,6 +264,7 @@ languageChart("Japanese", 100);
 languageChart("English", 75);
 languageChart("Swedish", 60);
 
+// History
 let show = 2; //最初に表示する件数
 let num = 4; //clickごとに表示したい件数
 let contents = ".timeline-list li"; // 対象のlist
@@ -243,6 +278,7 @@ $(".more").on("click", function () {
   }
 });
 
+// Yasuragi
 // 画像領域を取得
 let images = document.querySelector("#yasuragiImages");
 // 「進む」関数

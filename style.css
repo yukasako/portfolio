@@ -130,6 +130,17 @@ header #navbar-links a:hover {
   text-decoration: underline;
 }
 
+#waterColor {
+  width: 90vw;
+  max-width: 800px;
+  transform: scale(-1, 1);
+  z-index: -10;
+  position: absolute;
+  top: 0vh;
+  left: 0vw;
+  opacity: 80%;
+}
+
 #contents {
   width: 85vw;
   display: flex;
@@ -168,21 +179,21 @@ header #navbar-links a:hover {
   text-align: center;
 }
 #skills h3 {
-  margin: var(--space-48);
+  margin-bottom: var(--space-48);
 }
-#skills .allChats {
+#skills #allCharts {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
 }
-#skills .allChats .charts {
+#skills #allCharts .charts {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-#skills .allChats .charts .chart {
+#skills #allCharts .charts .chart {
   width: 100px;
   margin: var(--space-8);
 }
@@ -415,6 +426,9 @@ footer p {
 
 /*　Tablet　*/
 @media screen and (min-width: 768px) {
+  #waterColor {
+    display: none;
+  }
   header h1 {
     font-size: 36px;
   }
