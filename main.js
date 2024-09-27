@@ -220,38 +220,6 @@ let languageChart = (skill, percentage) => {
   });
 };
 
-// // アニメ発火させようとした https://mixltd.jp/blog/chart-js-animation/
-// var skillCharts = document.getElementById("HTML"); //canvasに設定したidを指定
-// var chart_flag = false; //フラグを設定
-
-// //グラフの描画タイミング
-// var chartTiming = function () {
-//   var target = $(skillCharts).offset().top; //画面上からのコンテンツまでの距離
-//   console.log(target);
-//   var scroll = $(window).scrollTop(); //スクロール量を取得
-//   console.log(scroll);
-//   var height = $(window).height(); //画面の高さを取得
-//   console.log(height);
-
-//   if (scroll > target - height - 200 && chart_flag == false) {
-//     chart(`HTML`, 85);
-//     techChart(`JavaScript`, 60);
-//     techChart(`Git`, 50);
-
-//     artChart("Drawing", 90);
-//     artChart("ClipStudio", 85);
-//     artChart("Figma", 70);
-
-//     languageChart("Japanese", 100);
-//     languageChart("English", 75);
-//     languageChart("Swedish", 60);
-
-//     chart_flag = true;
-//   }
-// };
-// window.addEventListener("load", chartTiming);
-// window.addEventListener("scroll", chartTiming);
-
 chart(`HTML`, 85);
 techChart(`JavaScript`, 50);
 techChart(`Git`, 40);
@@ -264,19 +232,35 @@ languageChart("Japanese", 100);
 languageChart("English", 75);
 languageChart("Swedish", 60);
 
-// History
-let show = 2; //最初に表示する件数
-let num = 4; //clickごとに表示したい件数
-let contents = ".timeline-list li"; // 対象のlist
-$(contents + ":nth-child(n + " + (show + 1) + ")").addClass("is-hidden");
-$(".more").on("click", function () {
-  $(contents + ".is-hidden")
-    .slice(0, num)
-    .removeClass("is-hidden");
-  if ($(contents + ".is-hidden").length == 0) {
-    $(".more").fadeOut();
-  }
-});
+//History
+const loadMoreHistory = () => {
+  let show = 2;
+  let num = 4;
+  let contents = document.querySelectorAll(".timeline-list li");
+  let loadMoreBtn = document.querySelector(".more button");
+  let loadMore = document.querySelector(".more");
+
+  contents.forEach((item, index) => {
+    if (index >= show) {
+      item.classList.add("is-hidden");
+    }
+  });
+
+  loadMoreBtn.addEventListener("click", function () {
+    let hiddenItems = document.querySelectorAll(".timeline-list li.is-hidden");
+
+    hiddenItems.forEach((item, index) => {
+      if (index < num) {
+        item.classList.remove("is-hidden");
+      }
+    });
+
+    if (document.querySelectorAll(".timeline-list li.is-hidden").length === 0) {
+      loadMore.style.display = "none";
+    }
+  });
+};
+loadMoreHistory();
 
 // Yasuragi
 // 画像領域を取得
