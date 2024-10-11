@@ -222,7 +222,7 @@ let languageChart = (skill, percentage) => {
 
 chart(`HTML`, 85);
 techChart(`JavaScript`, 50);
-techChart(`Git`, 40);
+techChart(`React`, 40);
 
 artChart("Drawing", 90);
 artChart("ClipStudio", 85);
